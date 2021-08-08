@@ -5490,7 +5490,7 @@ body {
 }
 .page {
   overflow: hidden;
-  min-height: 500px
+  min-height: 100vh
 }
 .lt-ie9 .page {
   min-width: 1200px

@@ -134,7 +134,7 @@ footer .copyright {
     border-right-color: transparent
 }
 .header__menu {
-    padding: 1em 0;
+    padding: .5em 0;
 }
 .sf-menu {
     text-align: right;
@@ -173,6 +173,12 @@ footer .copyright {
 .page__content a:hover {
     text-decoration: underline;
 }
+.page__content a.btn2 {
+    color: #fff;
+}
+.page__content a.btn2:hover {
+    text-decoration: none;
+}
 .page__content table tr td {
     vertical-align: top;
     padding: 5px;
@@ -183,7 +189,7 @@ footer .copyright {
     font-size: 16px;
 }
 .page__content ul li {
-    list-style: disc;
+    list-style: disc
 }
 .project {
     position: relative;
@@ -738,4 +744,46 @@ footer .copyright {
 .section-slider {
     max-height: 510px;
     overflow: hidden;
+}
+.section-games-item-team {
+    display: flex;
+    align-items: center;
+}
+.section-games-item-team .name-city:first-child {
+    text-align: right;
+    margin: 0 1rem 0 0;
+    min-width: 150px;
+}
+.section-games-item-team .name-city:last-child {
+    text-align: left;
+    min-width: 150px;
+    margin: 0 0 0 1rem;
+}
+.section-games-item-team .name-city .name {
+    font-weight: 700;
+    font-size: 18px;
+}
+.section-games-item-name, .section-games-item-date {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.section-games-item-name {
+    font-weight: 700;
+    font-size: 20px;
+}
+.section-games-item-date {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+.section-games-item-date > div:first-child {
+    font-weight: 700;
+}
+.section-games .row + .row {
+    border-top: 1px solid #dd2731;
+    padding-top: 3rem;
+}
+.page main section {
+    min-height: 42vh;
 }

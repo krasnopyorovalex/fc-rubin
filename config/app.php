@@ -168,7 +168,7 @@ return [
         App\Providers\TextParserServiceProvider::class,
         App\Providers\ProducersServiceProvider::class,
         App\Providers\IconsServiceProvider::class,
-        App\Providers\ProjectsServiceProvider::class,
+        //App\Providers\ProjectsServiceProvider::class,
         App\Providers\CatalogServiceProvider::class,
     ],
 

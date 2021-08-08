@@ -76,17 +76,18 @@
                             <!-- Main -->
                             <li class="navigation-header"><span>Навигация</span> <i class="icon-menu" title="Main pages"></i></li>
                             <li><a href="{{ route('admin.pages.index') }}"><i class="icon-compose"></i> <span>Страницы</span></a></li>
-                            <li><a href="{{ route('admin.catalogs.index') }}"><i class="icon-folder-open"></i> <span>Каталог</span></a></li>
-{{--                            <li><a href="{{ route('admin.projects.index') }}"><i class="icon-books"></i> <span>Проекты</span></a></li>--}}
+{{--                            <li><a href="{{ route('admin.catalogs.index') }}"><i class="icon-folder-open"></i> <span>Каталог</span></a></li>--}}
+                            <li><a href="{{ route('admin.teams.index') }}"><i class="icon-users4 "></i> <span>Команды</span></a></li>
+                            <li><a href="{{ route('admin.games.index') }}"><i class="icon-podium"></i> <span>Матчи</span></a></li>
                             <li><a href="{{ route('admin.articles.index') }}"><i class="icon-magazine"></i> <span>Статьи</span></a></li>
-                            {{--<li><a href="{{ route('admin.infos.index') }}"><i class="icon-newspaper"></i> <span>Новости</span></a></li>--}}
+                            <li><a href="{{ route('admin.infos.index') }}"><i class="icon-newspaper"></i> <span>Новости</span></a></li>
                             {{--<li><a href="{{ route('admin.guestbooks.index') }}"><i class="icon-bubble2"></i> <span>Отзывы</span></a></li>--}}
-                            {{--<li><a href="{{ route('admin.galleries.index') }}"><i class="icon-stack-picture"></i> <span>Галерея</span></a></li>--}}
+                            <li><a href="{{ route('admin.galleries.index') }}"><i class="icon-stack-picture"></i> <span>Галерея</span></a></li>
                             <li><a href="{{ route('admin.sliders.index') }}"><i class="icon-images2"></i> <span>Слайдер</span></a></li>
 {{--                            <li><a href="{{ route('admin.producers.index') }}"><i class="icon-truck"></i> <span>Поставщики</span></a></li>--}}
 {{--                            <li><a href="{{ route('admin.industries.index') }}"><i class="icon-pencil-ruler"></i> <span>Отрасли</span></a></li>--}}
 {{--                            <li><a href="{{ route('admin.tabs.index') }}"><i class="icon-stack"></i> <span>Виды продукции</span></a></li>--}}
-                            <li><a href="{{ route('admin.icons.index') }}"><i class="icon-hyperlink"></i> <span>Иконки</span></a></li>
+{{--                            <li><a href="{{ route('admin.icons.index') }}"><i class="icon-hyperlink"></i> <span>Иконки</span></a></li>--}}
                             <li><a href="{{ route('admin.menus.index') }}"><i class="icon-lan2"></i> <span>Навигация</span></a></li>
                             <li><a href="{{ route('admin.redirects.index') }}"><i class="icon-transmission"></i> <span>Редиректы</span></a></li>
                             <!-- /main -->

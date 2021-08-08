@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Domain\Project\Queries\GetProjectByAliasQuery;
 
 /**
- * Class ProjectController
+ * Class GameController
  * @package App\Http\Controllers
  */
 class ProjectController extends Controller

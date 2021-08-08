@@ -17,7 +17,6 @@
 <body>
     <div class="page">
         <header>
-
             <div class="header-wrapper center767">
                 <div class="container">
                     <div class="row">
@@ -45,18 +44,14 @@
             <div id="stuck_container" class="stuck_container">
                 <div class="container">
                     <div class="row align-items-center header__menu">
-                        <div class="col-md-5">
+                        <div class="col-md-2">
                             <div class="navbar-header">
                                 <a href="{{ route('page.show') }}" class="logo-link">
-                                    <img class="brand_img" src="{{ asset('images/evrosoyuz-es-evropa-flag.gif') }}" title="Компания LLC CERNEL INDASTRIS GROUP" alt="Компания LLC CERNEL INDASTRIS GROUP"/>
-                                    <span class="logo-info">с 2013 года на рынке<br />агропроизводства</span>
+                                    <img class="brand_img" src="{{ asset('images/logo.png') }}" title="" alt="" />
                                 </a>
-                                <div class="logo-lion">
-                                    <img src="{{ asset('images/logo-2.png') }}" alt="">
-                                </div>
                             </div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-10">
                             <nav class="navbar navbar-default navbar-static-top center" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                                 @includeWhen($menu->get('menu_header'), 'layouts.menus.header')
                             </nav>
@@ -66,12 +61,7 @@
             </div>
 
         </header>
-
         @yield('content')
-
-        <div class="text-running">
-            <marquee scrollamount="10">КОМПАНИЯ CERTIS CAPITAL GROUP LTD ПРОИЗВОДИТ ПРОДАЖУ АМЕРИКАНСКИХ СЕМЯН НЕ СОДЕРЖАЩИХ ГМО, А ТАКЖЕ КАНАДСКИХ ТРАНСГЕННЫХ СЕМЯН РАПСА, ПШЕНИЦЫ, ЯЧМЕНЯ, ПОДСОЛНЕЧНИКА, КУКУРУЗЫ, СОИ, ГРЕЧИХИ. ЗАКЛЮЧАЕТ ДОГОВОР НА ЗАКУПКУ БУДУЩЕГО УРОЖАЯ С СЕЛЬСКОХОЗЯЙСТВЕННЫМИ ПРЕДПРИЯТИЯМИ РОССИИ, КАЗАХСТАНА, КИРГИЗИИ, ТАДЖИКИСТАНА И ДЕЛАЕТ ПРЕДОПЛАТУ В РАЗМЕРЕ 35% ЗА БУДУЩИЙ УРОЖАЙ</marquee>
-        </div>
         <footer>
             <div class="container">
                 <div class="row">
@@ -124,29 +114,8 @@
     <script src="{{ asset('js/sticky_menu.js') }}"></script>
     <script src="{{ asset('js/slick.js') }}"></script>
     <script src="{{ mix('js/app.js') }}"></script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    @if(app()->environment('production'))
 
-        ym(65430790, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/65430790" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171801679-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-171801679-1');
-    </script>
+    @endif
 </body>
 </html>

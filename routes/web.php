@@ -21,11 +21,8 @@ Route::post('send-order', 'FormHandlerController@order')->name('send.product.for
 Route::group(['middleware' => ['redirector', 'shortcode']], function () {
     Route::get('{alias}', 'PageController@show')->name('page.show');
     Route::get('/{alias?}/{page?}', 'PageController@show')->name('page.show')->where('page', '[0-9]+');
-    Route::get('producers/{alias}', 'ProducerController@show')->name('producer.show');
-    Route::get('projects/{alias}', 'ProjectController@show')->name('project.show');
     Route::get('articles/{alias}', 'BlogController@show')->name('article.show');
-    Route::get('catalog/{alias}', 'CatalogController@show')->name('catalog.show');
-    Route::get('product/{alias}', 'CatalogProductController@show')->name('catalog_product.show');
+    Route::get('games/{alias}', 'GameController@show')->name('game.show');
 //    Route::get('news/{alias}', 'InfoController@show')->name('info.show');
 });
 

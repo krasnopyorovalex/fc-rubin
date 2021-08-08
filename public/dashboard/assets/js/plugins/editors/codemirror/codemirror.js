@@ -2933,7 +2933,7 @@
       return;
     }
 
-    // 'Project' the visible viewport to cover the area that is being
+    // 'Game' the visible viewport to cover the area that is being
     // scrolled into view (if we know enough to estimate it).
     if (dy && wheelPixelsPerUnit != null) {
       var pixels = dy * wheelPixelsPerUnit;
