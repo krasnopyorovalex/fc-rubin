@@ -1,4 +1,4 @@
-<div class="row list__items" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="BlogPost">
+<div class="row list__items galleries" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="BlogPost">
     @foreach ($galleries as $gallery)
         <div class="col-md-6 col-sm-12 col-xs-12 center991">
             @if($gallery->image)

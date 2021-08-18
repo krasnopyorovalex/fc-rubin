@@ -14485,6 +14485,9 @@ footer .copyright {
 .with-table-games table tr.our-command td {
     background: rgba(197,37,25,0.5);
 }
+.galleries .lightbox {
+    margin: 0 0 1rem 0;
+}
 @media (min-width:768px) {
     div.container {
         padding-left: 0;
