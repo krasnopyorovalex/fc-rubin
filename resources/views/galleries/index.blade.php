@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 flex-start">
-                    <div class="content page__content">
+                    <div class="content page__content galleries">
                         <h1>Галерея. {{ $gallery->name }}</h1>
                         <div class="row">
                             @foreach ($gallery->images as $image)
