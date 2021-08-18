@@ -2,6 +2,7 @@
     @foreach ($news as $new)
         <div class="col-md-6 col-sm-12 col-xs-12 center991">
             <div itemscope="" itemprop="image" itemtype="http://schema.org/ImageObject" class="img">
+                @if($new->image)
                 <figure>
                     <a href="{{ $new->url }}">
                         <img itemprop="url contentUrl" src="{{ asset($new->image->path) }}" class="img-add" alt="{{ $new->image->alt }}" title="{{ $new->image->title }}">
@@ -10,6 +11,7 @@
                         <meta itemprop="height" content="330">
                     </a>
                 </figure>
+                @endif
             </div>
             <div class="text-wrap">
                 <div class="date">
