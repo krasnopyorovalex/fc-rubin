@@ -14486,7 +14486,8 @@ footer .copyright {
     background: rgba(197,37,25,0.5);
 }
 .galleries .lightbox {
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
+    display: block;
 }
 @media (min-width:768px) {
     div.container {
