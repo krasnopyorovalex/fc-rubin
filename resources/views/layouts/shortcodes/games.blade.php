@@ -6,13 +6,13 @@
                     {{ $game->name }}
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-2">
                 <div class="section-games-item-date">
                     <div>{{ $game->started_at->formatLocalized('%d %b %Y') }}</div>
                     <div>{{ $game->started_time_at }}</div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="section-games-item-team">
                     <div class="name-city">
                         <div class="name">{{ $game->teamFirst->name }}</div>

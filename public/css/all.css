@@ -14452,8 +14452,38 @@ footer .copyright {
     border-top: 1px solid #dd2731;
     padding-top: 3rem;
 }
-.page main section {
-    min-height: 42vh;
+.matches-in-main {
+    margin: 2rem 0;
+}
+.page .page__content {
+    height: auto;
+    min-height: 100%
+}
+.box2_cnt h5 {
+    margin: 0;
+}
+.box2_cnt {
+    padding: 2rem 0;
+    text-align: center;
+}
+.with-table-games table {
+    border: 1px solid #e8ebee;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+.with-table-games table th {
+    background: rgba(254, 232, 211, .5);
+}
+.with-table-games table th, .with-table-games table td {
+    padding: 5px;
+    border: 1px solid #e8ebee;
+    border-collapse: collapse;
+}
+.with-table-games table tr:nth-child(2n) td {
+    background: rgba(254, 232, 211, .2);
+}
+.with-table-games table tr.our-command td {
+    background: rgba(197,37,25,0.5);
 }
 @media (min-width:768px) {
     div.container {

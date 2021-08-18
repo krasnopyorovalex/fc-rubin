@@ -24,7 +24,7 @@
 
                 @imageInput(['name' => 'image', 'type' => 'file', 'label' => 'Выберите изображение на компьютере'])
 
-                @textarea(['name' => 'preview', 'label' => 'Превью статьи', 'id' => 'editor-full2'])
+                @textarea(['name' => 'preview', 'label' => 'Превью новости', 'id' => 'editor-full2'])
                 @textarea(['name' => 'text', 'label' => 'Текст'])
                 @checkbox(['name' => 'is_published', 'label' => 'Опубликовано?', 'isChecked' => true])
 

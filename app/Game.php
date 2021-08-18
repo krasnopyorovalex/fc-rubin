@@ -68,4 +68,12 @@ class Game extends Model
     {
         return route('game.show', $this->alias);
     }
+
+    /**
+     * @return string
+     */
+    public function getUrlGalleryAttribute(): string
+    {
+        return route('gallery.show', $this->alias);
+    }
 }

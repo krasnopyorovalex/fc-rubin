@@ -153,7 +153,7 @@ $(window).scroll(function() {
 (function($) {
     var o = $('.lightbox');
     if (o.length > 0) {
-        include('js/jquery.touch-touch.js');
+        include('js/touchTouch.jquery.js');
         $(document).ready(function() {
             o.touchTouch();
         });

@@ -23,7 +23,8 @@ Route::group(['middleware' => ['redirector', 'shortcode']], function () {
     Route::get('/{alias?}/{page?}', 'PageController@show')->name('page.show')->where('page', '[0-9]+');
     Route::get('articles/{alias}', 'BlogController@show')->name('article.show');
     Route::get('games/{alias}', 'GameController@show')->name('game.show');
-//    Route::get('news/{alias}', 'InfoController@show')->name('info.show');
+    Route::get('news/{alias}', 'InfoController@show')->name('info.show');
+    Route::get('gallery/{alias}', 'GalleryController@show')->name('gallery.show');
 });
 
 Route::group(['prefix' => '_root', 'middleware' => 'auth', 'namespace' => 'Admin', 'as' => 'admin.'], function () {

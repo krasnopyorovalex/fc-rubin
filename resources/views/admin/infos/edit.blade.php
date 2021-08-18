@@ -43,7 +43,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    @textarea(['name' => 'preview', 'label' => 'Превью статьи', 'id' => 'editor-full2', 'entity' => $info])
+                                    @textarea(['name' => 'preview', 'label' => 'Превью новости', 'id' => 'editor-full2', 'entity' => $info])
                                     @textarea(['name' => 'text', 'label' => 'Текст', 'entity' => $info])
                                     @checkbox(['name' => 'is_published', 'label' => 'Опубликовано?', 'entity' => $info])
 

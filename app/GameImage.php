@@ -43,7 +43,7 @@ class GameImage extends Model
      */
     public function getPath(): string
     {
-        return asset('storage/games/' . $this->game_id . '/' . $this->basename . '.' . $this->ext);
+        return asset('storage/game/' . $this->game_id . '/' . $this->basename . '.' . $this->ext);
     }
 
     /**
@@ -51,6 +51,6 @@ class GameImage extends Model
      */
     public function getThumb(): string
     {
-        return asset('storage/games/' . $this->game_id . '/' . $this->basename . '_thumb.' . $this->ext);
+        return asset('storage/game/' . $this->game_id . '/' . $this->basename . '_thumb.' . $this->ext);
     }
 }

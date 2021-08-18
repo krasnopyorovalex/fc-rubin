@@ -9,6 +9,7 @@ use App\Domain\Industry\Queries\GetAllIndustriesQuery;
 use App\Domain\Info\Queries\GetAllInfosQuery;
 use App\Domain\Producer\Queries\GetAllProducersQuery;
 use App\Domain\Project\Queries\GetAllProjectsQuery;
+use App\Game;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 
@@ -49,6 +50,11 @@ class TextParserService
                     $games = $this->dispatch(new GetAllGamesQuery());
 
                     return view('layouts.shortcodes.games', ['games' => $games]);
+                },
+                '#(<p(.*)>)?{gallery}(<\/p>)?#' => function () use ($entity) {
+                    $galleries = Game::with(['images'])->latest('started_at')->paginate(18);
+
+                    return view('layouts.shortcodes.galleries', ['galleries' => $galleries]);
                 },
 //                '#(<p(.*)>)?{projects}(<\/p>)?#' => function () use ($entity) {
 //                    $projects = $this->dispatch(new GetAllProjectsQuery());
