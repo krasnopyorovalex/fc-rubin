@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Галерея. ' . $gallery->title)
+@section('title', 'Галерея. ' . $gallery->name)
 @section('description',  'Галерея. ' . $gallery->description)
 @push('og')
-    <meta property="og:title" content="{{  'Галерея. ' . $gallery->name }}">
+    <meta property="og:title" content="{{ $gallery->name }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($gallery->image ? $gallery->image->path : 'images/logo.png') }}">
