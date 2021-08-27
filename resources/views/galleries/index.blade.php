@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Галерея. ' . $gallery->name)
-@section('description',  'Галерея. ' . $gallery->description)
+@section('title', $gallery->name)
+@section('description', $gallery->description)
 @push('og')
     <meta property="og:title" content="{{ $gallery->name }}">
     <meta property="og:type" content="website">
