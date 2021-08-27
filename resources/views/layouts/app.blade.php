@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title', '- Компания LLC CERNEL INDASTRIS GROUP')</title>
+    <title>@yield('title', '')</title>
     <meta name="description" content="@yield('description', '')">
     <meta name="google" content="notranslate">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -22,18 +22,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="info-list">
-                                <li class="fa">
-                                    <a href="tel:+359876092441">+35 987 609 24 41</a>
-                                    <img src="{{ asset('images/viber.svg') }}" alt="">
-                                </li>
-                                <li class="fa">
-                                    <a href="tel:+79681934546">+7 968 193 45 46</a>
-                                    <img src="{{ asset('images/whatsapp.svg') }}" alt="">
-                                </li>
-                                <li class="fa"><a href="tel:+74993440580">+7 499 344 05 80</a> <span>Fax</span></li>
-                                <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
                                 <li class="fa fa-map-marker">
-                                    <address>КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 4002</address>
+                                    <address>
+                                        298612, Крым респ, г. Ялта, Садовая ул, дом 5В , корпус Литер А, помещение 2
+                                    </address>
                                 </li>
                             </ul>
                         </div>
@@ -67,11 +59,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="contacts">
-                            <li class="fa fa-map-marker">КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 4002</li>
-                            <li class="fa fa-phone"><a href="tel:+380509821879">+38 (050) 982-18-79</a></li>
-                            <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>
-                            <li class="fa fa-envelope"><a href="mailto:certiscapgroup@hotmail.com">certiscapgroup@hotmail.com</a></li>
-                            <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
+                            <li class="fa fa-map-marker">298612, Крым респ, г. Ялта, Садовая ул, дом 5В , корпус Литер А, помещение 2</li>
+                            <li><a href="https://vk.com/fcrubinyalta" target="_blank" rel="noopener noreferrer"><i class="fa fa-vk"></i></a></li>
+{{--                            <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>--}}
                         </ul>
                     </div>
                     <div class="col-md-6 text-right">
@@ -82,7 +72,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="copyright">© CERTIS CAPITAL GROUP LTD, 2013-{{ date('Y') }}гг. Все права защищены</div>
+                        <div class="copyright">© ФК "Рубин" Ялта {{ date('Y') }}г. Все права защищены</div>
                     </div>
                     <div class="col-md-6">
                         <div class="develop">
