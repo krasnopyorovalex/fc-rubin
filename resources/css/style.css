@@ -821,3 +821,33 @@ footer .copyright {
     margin: 0 0 2rem 0;
     display: block;
 }
+.player-name {
+    font-size: 16px;
+    border-bottom: 1px solid #dddddd;
+    padding: 0 0 .8rem 0;
+}
+.player-name b {
+    display: block;
+    font-size: 18px;
+    line-height: normal;
+}
+.player-position {
+    font-size: 16px;
+    margin: .5rem 0;
+}
+.player-info {
+    width: 100%;
+}
+.player-info-row {
+    display: flex;
+    align-items: center;
+}
+.player-info-row > div {
+    flex-grow: 1;
+}
+.player-info-row > div:last-child {
+    text-align: right;
+}
+.player-info-row > div:first-child {
+    font-size: 13px;
+}
