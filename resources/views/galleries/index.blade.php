@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="{{ route('page.show') }}">Главная</a></li>
                         <li><a href="{{ route('page.show',['alias' => 'gallery']) }}">Галерея</a></li>
-                        <li>Галерея. {{ $gallery->name }}</li>
+                        <li>{{ $gallery->name }}</li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-12 flex-start">
                     <div class="content page__content galleries">
-                        <h1>Галерея. {{ $gallery->name }}</h1>
+                        <h1>{{ $gallery->name }}</h1>
                         <div class="row">
                             @foreach ($gallery->images as $image)
                                 <div class="col-md-3">
