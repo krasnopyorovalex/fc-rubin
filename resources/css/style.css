@@ -851,3 +851,6 @@ footer .copyright {
 .player-info-row > div:first-child {
     font-size: 13px;
 }
+.gallery-box {
+    margin: 1rem 0 0 0;
+}

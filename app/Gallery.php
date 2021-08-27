@@ -40,4 +40,9 @@ class Gallery extends Model
     {
         return $this->hasMany('App\GalleryImage')->orderBy('pos');
     }
+
+    public function getUrlAttribute()
+    {
+        return route('gallery.show', ['id' => $this->id]);
+    }
 }

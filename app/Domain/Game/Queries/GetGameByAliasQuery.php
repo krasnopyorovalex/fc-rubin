@@ -29,6 +29,6 @@ class GetGameByAliasQuery
      */
     public function handle()
     {
-        return Game::where('alias', $this->alias)->firstOrFail();
+        return Game::where('alias', $this->alias)->with(['images'])->firstOrFail();
     }
 }
