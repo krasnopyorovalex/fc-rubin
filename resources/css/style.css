@@ -824,6 +824,9 @@ footer .copyright {
     margin: 0 0 2rem 0;
     display: block;
 }
+.galleries .col-md-6 {
+    margin: 0 0 2rem 0;
+}
 .player-name {
     font-size: 16px;
     border-bottom: 1px solid #dddddd;
