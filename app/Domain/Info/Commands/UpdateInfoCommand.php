@@ -42,7 +42,7 @@ class UpdateInfoCommand
         $urlNew = $this->request->post('alias');
 
         if ($info->getOriginal('alias') != $urlNew) {
-            event(new RedirectDetected($info->getOriginal('alias'), $urlNew, 'new.show'));
+            event(new RedirectDetected($info->getOriginal('alias'), $urlNew, 'info.show'));
         }
 
         if ($this->request->has('image')) {
