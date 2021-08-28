@@ -58,6 +58,6 @@
         </section>
     </main>
     <div class="contacts-map">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1zKnG4d9GHuKPNZ2WLWu04WGhBLipm9IX" width="100%" height="480" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9036f85afbdd2973f68b47294f38ccb87088d7541f50526e60eadf685237f27&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
     </div>
 @endsection

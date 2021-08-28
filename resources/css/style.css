@@ -860,3 +860,6 @@ footer .copyright {
 .gallery-box {
     margin: 1rem 0 0 0;
 }
+.about-command > .row > .col-md-4 {
+    margin-bottom: 5rem;
+}
