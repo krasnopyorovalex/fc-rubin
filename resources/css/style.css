@@ -863,3 +863,6 @@ footer .copyright {
 .about-command > .row > .col-md-4 {
     margin-bottom: 5rem;
 }
+.game-gallery .row .col-md-3 {
+    margin-bottom: 2.5rem;
+}
