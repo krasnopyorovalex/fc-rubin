@@ -36,42 +36,19 @@
                         <ul class="contact-list row">
                             <li class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="fa fa-envelope"></div>
-                                <a href="mailto:lloydcg.uk@gmail.com">
-                                    <span>lloydcg.uk@gmail.com</span>
-                                </a>
-                                <a href="mailto:certiscapgroup@hotmail.com">
-                                    <span>certiscapgroup@hotmail.com</span>
-                                </a>
-                                <a href="mailto:cernelgroup@te.net.ua">
-                                    <span>cernelgroup@te.net.ua</span>
-                                </a>
+{{--                                <a href="mailto:lloydcg.uk@gmail.com">--}}
+{{--                                    <span>lloydcg.uk@gmail.com</span>--}}
+{{--                                </a>--}}
                             </li>
                             <li class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="fa fa-mobile"></div>
-                                <div class="phone-item">
-                                    <a href="tel:+359876092441">+35 987 609 24 41</a>
-                                    <img src="{{ asset('images/viber.svg') }}" alt="">
-                                </div>
-                                <div class="phone-item">
-                                    <a href="tel:+79681934546">+7 968 193 45 46</a>
-                                    <img src="{{ asset('images/whatsapp.svg') }}" alt="">
-                                </div>
-                                <div class="phone-item">
-                                    <a href="tel:+35799047495">+3 579 904 74 95</a>
-                                    <img src="{{ asset('images/whatsapp.svg') }}" alt="">
-                                </div>
-                                <div class="phone-item">
-                                    <a href="tel:+79680735408">+7 968 073 54 08</a>
-                                    <img src="{{ asset('images/telegram.svg') }}" alt="">
-                                </div>
-                                <div class="phone-item">
-                                    <a href="tel:+74993440580">+7 499 344 05 80</a>
-                                    <span>Fax</span>
-                                </div>
+{{--                                <div class="phone-item">--}}
+{{--                                    <a href="tel:+359876092441">+35 987 609 24 41</a>--}}
+{{--                                </div>--}}
                             </li>
                             <li class="col-md-4 col-sm-12 col-xs-12">
                                 <div class="fa fa-map-marker"></div>
-                                <address>КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 4002</address>
+                                <address>298612, Крым респ, г. Ялта, Садовая ул, дом 5В , корпус Литер А, помещение 2</address>
                             </li>
                         </ul>
 
@@ -81,6 +58,6 @@
         </section>
     </main>
     <div class="contacts-map">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1zKnG4d9GHuKPNZ2WLWu04WGhBLipm9IX" width="100%" height="480" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9036f85afbdd2973f68b47294f38ccb87088d7541f50526e60eadf685237f27&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
     </div>
 @endsection

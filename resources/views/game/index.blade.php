@@ -71,6 +71,17 @@
                             </div>
                         </section>
                         {!! $game->text !!}
+                        <div class="game-gallery">
+                            <div class="row">
+                                @foreach ($game->images as $image)
+                                    <div class="col-md-3">
+                                        <a href="{{ $image->getPath() }}" class="lightbox">
+                                            <img src="{{ $image->getThumb() }}" alt="{{ $image->alt }}" title="{{ $image->title }}">
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

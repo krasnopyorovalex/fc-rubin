@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Domain\Game\Queries\GetGameByAliasQuery;
+use App\Domain\Gallery\Queries\GetGalleryByIdQuery;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
@@ -14,12 +14,12 @@ use Illuminate\View\View;
 class GalleryController extends Controller
 {
     /**
-     * @param string $alias
+     * @param int $id
      * @return Application|Factory|View
      */
-    public function show(string $alias)
+    public function show(int $id)
     {
-        $gallery = $this->dispatch(new GetGameByAliasQuery($alias));
+        $gallery = $this->dispatch(new GetGalleryByIdQuery($id));
 
         return view('galleries.index', [
             'gallery' => $gallery

@@ -4,11 +4,13 @@ namespace App\Services;
 
 use App\Domain\Article\Queries\GetAllArticlesQuery;
 use App\Domain\Catalog\Queries\GetAllCatalogsQuery;
+use App\Domain\Gallery\Queries\GetAllGalleriesQuery;
 use App\Domain\Game\Queries\GetAllGamesQuery;
 use App\Domain\Industry\Queries\GetAllIndustriesQuery;
 use App\Domain\Info\Queries\GetAllInfosQuery;
 use App\Domain\Producer\Queries\GetAllProducersQuery;
 use App\Domain\Project\Queries\GetAllProjectsQuery;
+use App\Gallery;
 use App\Game;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -52,7 +54,10 @@ class TextParserService
                     return view('layouts.shortcodes.games', ['games' => $games]);
                 },
                 '#(<p(.*)>)?{gallery}(<\/p>)?#' => function () use ($entity) {
-                    $galleries = Game::with(['images'])->latest('started_at')->paginate(18);
+                    //$galleries = Game::with(['images'])->latest('started_at')->paginate(18);
+                    $galleries = Gallery::with(['images'])
+                        ->whereHas('images')
+                        ->paginate(18);
 
                     return view('layouts.shortcodes.galleries', ['galleries' => $galleries]);
                 },

@@ -32,6 +32,20 @@
                     <div class="col-md-12">
                         <h1>{{ $page->name }}</h1>
                         {!! $page->text !!}
+                        @if($page->gallery)
+                        <div class="gallery-box">
+                            <h3>{{ $page->gallery->name }}</h3>
+                            <div class="row">
+                                @foreach ($page->gallery->images as $image)
+                                    <div class="col-md-3">
+                                        <a href="{{ $image->getPath() }}" class="lightbox">
+                                            <img src="{{ $image->getThumb() }}" alt="{{ $image->alt }}" title="{{ $image->title }}">
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
