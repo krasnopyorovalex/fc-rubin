@@ -870,3 +870,7 @@ footer .copyright {
     display: block;
     width: 100%;
 }
+.galleries .lightbox {
+    margin: 0 0 2rem 0;
+    display: block;
+}

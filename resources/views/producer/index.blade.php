@@ -8,7 +8,7 @@
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($producer->image ? $producer->image->path : 'images/logo.png') }}">
     <meta property="og:description" content="{{ $producer->description }}">
-    <meta property="og:site_name" content="Компания LLC CERNEL INDASTRIS GROUP">
+    <meta property="og:site_name" content="Футбольный клуб Рубин-Ялта">
     <meta property="og:locale" content="ru_RU">
 @endpush
 

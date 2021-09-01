@@ -22,6 +22,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="info-list">
+                                <li class="fa"><a href="tel:+89153292985">+8 (915) 329-29-85</a></li>
+                                <li class="fa fa-envelope"><a href="mailto:rubin@cfu2015.com">rubin@cfu2015.com</a></li>
                                 <li class="fa fa-map-marker">
                                     <address>
                                         298612, Крым респ, г. Ялта, Садовая ул, дом 5В , корпус Литер А, помещение 2
@@ -61,7 +63,7 @@
                         <ul class="contacts">
                             <li class="fa fa-map-marker">298612, Крым респ, г. Ялта, Садовая ул, дом 5В , корпус Литер А, помещение 2</li>
                             <li><a href="https://vk.com/fcrubinyalta" target="_blank" rel="noopener noreferrer"><i class="fa fa-vk"></i></a></li>
-{{--                            <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>--}}
+                            <li class="fa fa-envelope"><a href="mailto:rubin@cfu2015.com">rubin@cfu2015.com</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 text-right">

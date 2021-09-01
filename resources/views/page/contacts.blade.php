@@ -8,7 +8,7 @@
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($page->image ? $page->image->path : 'images/logo.png') }}">
     <meta property="og:description" content="{{ $page->description }}">
-    <meta property="og:site_name" content="Компания LLC CERNEL INDASTRIS GROUP">
+    <meta property="og:site_name" content="Футбольный клуб Рубин-Ялта">
     <meta property="og:locale" content="ru_RU">
 @endpush
 
@@ -36,15 +36,15 @@
                         <ul class="contact-list row">
                             <li class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="fa fa-envelope"></div>
-{{--                                <a href="mailto:lloydcg.uk@gmail.com">--}}
-{{--                                    <span>lloydcg.uk@gmail.com</span>--}}
-{{--                                </a>--}}
+                                <a href="mailto:rubin@cfu2015.com">
+                                    <span>rubin@cfu2015.com</span>
+                                </a>
                             </li>
                             <li class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="fa fa-mobile"></div>
-{{--                                <div class="phone-item">--}}
-{{--                                    <a href="tel:+359876092441">+35 987 609 24 41</a>--}}
-{{--                                </div>--}}
+                                <div class="phone-item">
+                                    <a href="tel:+89153292985">+8 (915) 329-29-85</a>
+                                </div>
                             </li>
                             <li class="col-md-4 col-sm-12 col-xs-12">
                                 <div class="fa fa-map-marker"></div>

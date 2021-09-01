@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', $new->name . ' | Certis Capital Group LTD')
-@section('description', 'Предлагаем вам подробнее ознакомиться с нашей статьей: ' . $new->name . '. Если вам нужна консультация по семена, то звоните нам: +7 968 193 45 46.')
+@section('title', $new->name)
+@section('description', '')
 @push('og')
     <meta property="og:title" content="{{ $new->name }} | Certis Capital Group LTD">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($new->image ? $new->image->path : 'images/logo.png') }}">
-    <meta property="og:description" content="Предлагаем вам подробнее ознакомиться с нашей статьей: {{ $new->name }}. Если вам нужна консультация по семена, то звоните нам: +7 968 193 45 46.">
-    <meta property="og:site_name" content="Компания LLC CERNEL INDASTRIS GROUP">
+    <meta property="og:description" content="{{ $new->description }}">
+    <meta property="og:site_name" content="Футбольный клуб Рубин-Ялта">
     <meta property="og:locale" content="ru_RU">
 @endpush
 
